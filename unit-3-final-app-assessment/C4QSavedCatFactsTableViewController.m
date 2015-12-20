@@ -11,18 +11,20 @@
 
 @interface C4QSavedCatFactsTableViewController ()
 
-@property (nonatomic) NSArray *savedCatFacts;
+@property (nonatomic) NSMutableArray *savedCatFacts;
 
 @end
 
 @implementation C4QSavedCatFactsTableViewController
 - (IBAction)doneButtonTapped:(UIBarButtonItem *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+    [[NSUserDefaults standardUserDefaults] setObject:self.savedCatFacts forKey:@"savedCatFacts"];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.savedCatFacts = [[NSUserDefaults standardUserDefaults] objectForKey:@"savedCatFacts"];
+    self.savedCatFacts = [NSMutableArray new];
+    self.savedCatFacts = [[[NSUserDefaults standardUserDefaults] objectForKey:@"savedCatFacts"] mutableCopy];
     self.navigationController.title = @"Saved Cat Facts";
 }
 
@@ -53,8 +55,21 @@
     return NO;
 }
 
+#pragma mark - Table view Delegate
+
 -(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return UITableViewAutomaticDimension;
+}
+
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
+    return YES;
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ((editingStyle = UITableViewCellEditingStyleDelete)) {
+        [self.savedCatFacts removeObjectAtIndex:indexPath.row];
+        [self.tableView reloadData];
+    }
 }
 
 @end
