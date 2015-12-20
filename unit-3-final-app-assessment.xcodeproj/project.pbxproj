@@ -17,6 +17,11 @@
 		8D8753101C24774800BBD328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D87530F1C24774800BBD328 /* Assets.xcassets */; };
 		8D8753131C24774800BBD328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8753111C24774800BBD328 /* LaunchScreen.storyboard */; };
 		8DA03F741C2499F400328B53 /* C4QCatFactsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA03F731C2499F400328B53 /* C4QCatFactsDetailViewController.m */; };
+		D4EB57341C25FDB000BD705C /* CatFactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EB57331C25FDB000BD705C /* CatFactTableViewCell.m */; };
+		D4EB57371C263E0700BD705C /* C4QFetchCatFacts.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EB57361C263E0700BD705C /* C4QFetchCatFacts.m */; };
+		D4EB573B1C26434000BD705C /* C4QFetchCatImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EB573A1C26434000BD705C /* C4QFetchCatImage.m */; };
+		D4EB57401C267A9500BD705C /* C4QSavedCatFactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EB573F1C267A9500BD705C /* C4QSavedCatFactsTableViewController.m */; };
+		D4EB57431C267E0F00BD705C /* SavedCatFactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EB57421C267E0F00BD705C /* SavedCatFactTableViewCell.m */; };
 		DD8FD6DEC146B4B1C1F45D98 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A44461502C751D156694EAA4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +47,16 @@
 		8DA03F721C2499F400328B53 /* C4QCatFactsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C4QCatFactsDetailViewController.h; sourceTree = "<group>"; };
 		8DA03F731C2499F400328B53 /* C4QCatFactsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C4QCatFactsDetailViewController.m; sourceTree = "<group>"; };
 		A44461502C751D156694EAA4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4EB57321C25FDB000BD705C /* CatFactTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatFactTableViewCell.h; sourceTree = "<group>"; };
+		D4EB57331C25FDB000BD705C /* CatFactTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatFactTableViewCell.m; sourceTree = "<group>"; };
+		D4EB57351C263E0700BD705C /* C4QFetchCatFacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C4QFetchCatFacts.h; sourceTree = "<group>"; };
+		D4EB57361C263E0700BD705C /* C4QFetchCatFacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C4QFetchCatFacts.m; sourceTree = "<group>"; };
+		D4EB57391C26434000BD705C /* C4QFetchCatImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C4QFetchCatImage.h; sourceTree = "<group>"; };
+		D4EB573A1C26434000BD705C /* C4QFetchCatImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C4QFetchCatImage.m; sourceTree = "<group>"; };
+		D4EB573E1C267A9500BD705C /* C4QSavedCatFactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C4QSavedCatFactsTableViewController.h; sourceTree = "<group>"; };
+		D4EB573F1C267A9500BD705C /* C4QSavedCatFactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C4QSavedCatFactsTableViewController.m; sourceTree = "<group>"; };
+		D4EB57411C267E0F00BD705C /* SavedCatFactTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedCatFactTableViewCell.h; sourceTree = "<group>"; };
+		D4EB57421C267E0F00BD705C /* SavedCatFactTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedCatFactTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,14 +111,9 @@
 			children = (
 				8D8753061C24774700BBD328 /* AppDelegate.h */,
 				8D8753071C24774700BBD328 /* AppDelegate.m */,
-				8D610E9C1C2477EB00AADDC2 /* C4QViewController.h */,
-				8D610E9D1C2477EB00AADDC2 /* C4QViewController.m */,
-				8D610E961C2477EB00AADDC2 /* C4QColorPickerViewController.h */,
-				8D610E971C2477EB00AADDC2 /* C4QColorPickerViewController.m */,
-				8D610E941C2477EB00AADDC2 /* C4QCatFactsTableViewController.h */,
-				8D610E951C2477EB00AADDC2 /* C4QCatFactsTableViewController.m */,
-				8DA03F721C2499F400328B53 /* C4QCatFactsDetailViewController.h */,
-				8DA03F731C2499F400328B53 /* C4QCatFactsDetailViewController.m */,
+				D4EB573C1C26794900BD705C /* C4QCatFactViewControllers */,
+				D4EB573D1C26797200BD705C /* CatFactCells */,
+				D4EB57381C26431B00BD705C /* C4QModels */,
 				8D87530C1C24774700BBD328 /* Main.storyboard */,
 				8D87530F1C24774800BBD328 /* Assets.xcassets */,
 				8D8753031C24774700BBD328 /* Supporting Files */,
@@ -121,6 +131,45 @@
 				8D8753041C24774700BBD328 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4EB57381C26431B00BD705C /* C4QModels */ = {
+			isa = PBXGroup;
+			children = (
+				D4EB57351C263E0700BD705C /* C4QFetchCatFacts.h */,
+				D4EB57361C263E0700BD705C /* C4QFetchCatFacts.m */,
+				D4EB57391C26434000BD705C /* C4QFetchCatImage.h */,
+				D4EB573A1C26434000BD705C /* C4QFetchCatImage.m */,
+			);
+			name = C4QModels;
+			sourceTree = "<group>";
+		};
+		D4EB573C1C26794900BD705C /* C4QCatFactViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D610E9C1C2477EB00AADDC2 /* C4QViewController.h */,
+				8D610E9D1C2477EB00AADDC2 /* C4QViewController.m */,
+				8D610E961C2477EB00AADDC2 /* C4QColorPickerViewController.h */,
+				8D610E971C2477EB00AADDC2 /* C4QColorPickerViewController.m */,
+				8D610E941C2477EB00AADDC2 /* C4QCatFactsTableViewController.h */,
+				8D610E951C2477EB00AADDC2 /* C4QCatFactsTableViewController.m */,
+				8DA03F721C2499F400328B53 /* C4QCatFactsDetailViewController.h */,
+				8DA03F731C2499F400328B53 /* C4QCatFactsDetailViewController.m */,
+				D4EB573E1C267A9500BD705C /* C4QSavedCatFactsTableViewController.h */,
+				D4EB573F1C267A9500BD705C /* C4QSavedCatFactsTableViewController.m */,
+			);
+			name = C4QCatFactViewControllers;
+			sourceTree = "<group>";
+		};
+		D4EB573D1C26797200BD705C /* CatFactCells */ = {
+			isa = PBXGroup;
+			children = (
+				D4EB57321C25FDB000BD705C /* CatFactTableViewCell.h */,
+				D4EB57331C25FDB000BD705C /* CatFactTableViewCell.m */,
+				D4EB57411C267E0F00BD705C /* SavedCatFactTableViewCell.h */,
+				D4EB57421C267E0F00BD705C /* SavedCatFactTableViewCell.m */,
+			);
+			name = CatFactCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,12 +294,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D8753081C24774700BBD328 /* AppDelegate.m in Sources */,
+				D4EB57371C263E0700BD705C /* C4QFetchCatFacts.m in Sources */,
 				8D610EA01C2477EB00AADDC2 /* C4QCatFactsTableViewController.m in Sources */,
+				D4EB57341C25FDB000BD705C /* CatFactTableViewCell.m in Sources */,
 				8D8753051C24774700BBD328 /* main.m in Sources */,
 				8DA03F741C2499F400328B53 /* C4QCatFactsDetailViewController.m in Sources */,
+				D4EB57431C267E0F00BD705C /* SavedCatFactTableViewCell.m in Sources */,
+				D4EB573B1C26434000BD705C /* C4QFetchCatImage.m in Sources */,
 				8D610EA41C2477EB00AADDC2 /* C4QViewController.m in Sources */,
 				8D610EA11C2477EB00AADDC2 /* C4QColorPickerViewController.m in Sources */,
 				8D610EA21C2477EB00AADDC2 /* C4QRootViewController.m in Sources */,
+				D4EB57401C267A9500BD705C /* C4QSavedCatFactsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "unit-3-final-app-assessment/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mikekavouras.unit-3-final-app-assessment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,6 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "unit-3-final-app-assessment/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mikekavouras.unit-3-final-app-assessment";
 				PRODUCT_NAME = "$(TARGET_NAME)";

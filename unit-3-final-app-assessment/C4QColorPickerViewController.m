@@ -18,12 +18,21 @@
 
 @implementation C4QColorPickerViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     self.blueButton.backgroundColor = [UIColor blueColor];
     self.greenButton.backgroundColor = [UIColor greenColor];
     self.redButton.backgroundColor = [UIColor redColor];
 }
+
+- (IBAction)buttonTapped:(UIButton *)sender {
+    
+    [self.delegate colorSelected: sender.backgroundColor];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+
 
 @end
